@@ -13,7 +13,6 @@ import java.util.Scanner;
 
 public class Gestor {
     List<CompteEstalvi> comptes = new ArrayList<>();
-    int opcion=5;
     Scanner scanner = new Scanner(System.in);
 
     public void nuevaCuenta(){

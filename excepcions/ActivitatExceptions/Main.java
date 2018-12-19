@@ -1,13 +1,7 @@
 package excepcions.ActivitatExceptions;
 
 import excepcions.ActivitatExceptions.Exceptions.BankAccountException;
-import excepcions.ActivitatExceptions.Exceptions.ClientAccountException;
-import excepcions.ActivitatExceptions.Exceptions.ExceptionMessage;
-import excepcions.ActivitatExceptions.Model.Client;
 import excepcions.ActivitatExceptions.Model.CompteEstalvi;
-
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 
 public class Main {
@@ -15,7 +9,6 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
         Gestor g = new Gestor();
-        int cont;
         int opcion = 5;
         int opcion2 = 5;
 
@@ -44,7 +37,7 @@ public class Main {
                                System.out.println("1.- Ingresar Dinero");
                                System.out.println("2.- Retirar Dinero");
                                System.out.println("3.- Añadir una persona a la cuenta");
-                               System.out.println("4.- Añadir una persona a la cuenta");
+                               System.out.println("4.- Eliminar una persona a la cuenta");
                                System.out.println("5.- Transferencia a otra cuenta\n\n");
                                System.out.println("0.- Salir");
                                opcion2 = scanner.nextInt();
