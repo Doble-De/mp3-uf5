@@ -115,6 +115,8 @@ public class Gestor {
            client.transferencia(compte, compted, cantidad);
         } catch (BankAccountException e) {
             System.out.println(e.getMessage());
+            e=new BankAccountException(ExceptionMessage.TRANSFER_ERROR);
+            System.out.println(e.getMessage());
         }
 
 
